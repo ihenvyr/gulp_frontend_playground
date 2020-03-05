@@ -1,7 +1,7 @@
-# codecanyon_item
-A boilerplate to create CodeCanyon item.
+# gulp_frontend_playground
+HTML, CSS and Javascript experiments
 
 ### Get Started
-`npm install gulp-cli -g`
-
 `npm install`
+
+`npm run dev`

@@ -1,5 +1,5 @@
 {
-  "name": "codecanyon_item_css",
+  "name": "gulp_frontend_playground",
   "version": "1.0.0",
   "description": "A boilerplate to create CodeCanyon item.",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ihenvyr/codecanyon_item_css.git"
+    "url": "git+https://github.com/ihenvyr/gulp_frontend_playground.git"
   },
   "keywords": [],
   "author": "Henry C. Cruz <ihenvyr@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ihenvyr/codecanyon_item_css/issues"
+    "url": "https://github.com/ihenvyr/gulp_frontend_playground/issues"
   },
-  "homepage": "https://github.com/ihenvyr/codecanyon_item_css#readme",
+  "homepage": "https://github.com/ihenvyr/gulp_frontend_playground#readme",
   "devDependencies": {
     "autoprefixer": "9.7.3",
     "browser-sync": "2.26.7",
