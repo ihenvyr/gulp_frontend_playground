@@ -1,0 +1,65 @@
+@import "vars";
+
+// Makes working with themeable CSS variables easier.
+//
+// $property: the CSS property to theme.
+// $cssVariable: The CSS variable that will store the themed value.
+// $fallback: The value to use as a fallback but as well for the CSS variable default value.
+@mixin themeable($property, $cssVariable, $fallback) {
+  #{$property}: #{$fallback};
+  #{$property}: var(--#{$cssVariable}, #{$fallback});
+}
+
+// Makes working with themeable CSS variables easier. Used when
+// a CSS variable requires !important as a postfix of the CSS property's
+// value where the CSS variable is being used.
+//
+// $property: the CSS property to theme.
+// $cssVariable: The CSS variable that will store the themed value.
+// $fallback: The value to use as a fallback but as well for the CSS variable default value.
+@mixin themeable-important($property, $cssVariable, $fallback) {
+  #{$property}: #{$fallback} !important;
+  #{$property}: var(--#{$cssVariable}, #{$fallback}) !important;
+}
+
+// $breakpoint: [sm, md, lg, xl]
+@mixin respond-to($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    // Write the media query.
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+// $breakpoint: [sm, md, lg, xl]
+@mixin respond-below($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    // Write the media query.
+    @media (max-width: $breakpoint-value - 1) {
+      @content;
+    }
+
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}

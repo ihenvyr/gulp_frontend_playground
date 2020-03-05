@@ -1,0 +1,5 @@
+READ THIS BEFORE PUBLISHING, CODECANYON REVIEWER REQUIREMENTS
+
+1. remove all html commented code
+2. always use relative url protocol `//` instead of `https://`
+3. inline `styles` and `scripts` is not allowed, move them in different files.

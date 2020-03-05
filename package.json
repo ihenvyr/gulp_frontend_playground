@@ -1,0 +1,44 @@
+{
+  "name": "codecanyon_item_css",
+  "version": "1.0.0",
+  "description": "A boilerplate to create CodeCanyon item.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development gulp dev",
+    "build": "rimraf build/* && rimraf build-public/* && NODE_ENV=production gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihenvyr/codecanyon_item_css.git"
+  },
+  "keywords": [],
+  "author": "Henry C. Cruz <ihenvyr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihenvyr/codecanyon_item_css/issues"
+  },
+  "homepage": "https://github.com/ihenvyr/codecanyon_item_css#readme",
+  "devDependencies": {
+    "autoprefixer": "9.7.3",
+    "browser-sync": "2.26.7",
+    "cssnano": "4.1.10",
+    "gulp": "4.0.2",
+    "gulp-changed": "4.0.2",
+    "gulp-imagemin": "6.2.0",
+    "gulp-images-resizer": "0.0.8",
+    "gulp-include": "2.4.1",
+    "gulp-newer": "1.4.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-rcs": "2.0.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-selectors": "0.1.10",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-uglify": "3.0.2",
+    "postcss-calc": "7.0.1",
+    "postcss-merge-rules": "4.0.3",
+    "rcs-core": "2.6.3",
+    "rimraf": "3.0.0"
+  },
+  "dependencies": {}
+}

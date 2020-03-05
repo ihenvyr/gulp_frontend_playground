@@ -1,0 +1,17 @@
+$color-white: #FFFFFF !default;
+$color-black: #151918 !default;
+$color-primary: #2786de !default;
+
+$font-family-body: sans-serif !default;
+$font-family-heading: "Roboto", serif !default;
+
+$body-font-size: 16px !default;
+$body-font-style: normal !default;
+$body-font-weight: normal !default;
+
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+) !default;
